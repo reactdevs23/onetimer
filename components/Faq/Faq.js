@@ -1,19 +1,8 @@
 import React, { useState } from "react";
 
-import { StyledText, Title, StyledContainer } from "../../styles/Common.styled";
-import {
-  Id,
-  IdAndQuestionWrapper,
-  QuestionWrapper,
-  Question,
-  IconContainer,
-  Icon,
-  FaqContainer,
-  FaqWrapper,
-  QustionAndAnswer,
-  List,
-  StyledAnswer,
-} from "./Faq.styled";
+import { Title, StyledContainer } from "../../styles/Common.styled";
+import { FaqContainer, FaqWrapper } from "./Faq.styled";
+import FaqComponents from "./FaqComponent";
 const Faq = () => {
   const [active, setActive] = useState(0);
   const faqArray = [
@@ -53,46 +42,14 @@ const Faq = () => {
       },
     },
   ];
+
   return (
     <FaqContainer>
       <StyledContainer>
         <FaqWrapper>
           <div>
             {faqArray.map((el, i) => (
-              <div key={i}>
-                <IdAndQuestionWrapper>
-                  <Id>{i + 1 !== 0 && i < 10 ? `0${i + 1}` : i + 1}</Id>
-                  <QustionAndAnswer>
-                    <QuestionWrapper>
-                      <Question>{el.question}</Question>
-                      <IconContainer onClick={() => setActive(i)}>
-                        <Icon
-                          src={active === i ? "/Minus.svg" : "/Add.svg"}
-                        ></Icon>
-                      </IconContainer>
-                    </QuestionWrapper>
-                    {active === i && (
-                      <>
-                        <StyledAnswer color="#191919">
-                          {el.answer.text}
-                        </StyledAnswer>
-                        <StyledAnswer color="#191919">
-                          {" "}
-                          {el.answer.list && (
-                            <List>
-                              <ul>
-                                {el.answer.list.map((item, i) => (
-                                  <li key={i}>{item}</li>
-                                ))}
-                              </ul>
-                            </List>
-                          )}
-                        </StyledAnswer>
-                      </>
-                    )}
-                  </QustionAndAnswer>
-                </IdAndQuestionWrapper>
-              </div>
+              <FaqComponents key={i} id={i} {...el} />
             ))}
           </div>
           <Title color="#191919" faqTitle="48px">
