@@ -79,14 +79,15 @@ const BeautyOfWeb3 = () => {
             data-aos-delay="200"
             src="/thePlatform/img-beautyweb3Yellow_m.webp"
           />
-          <GreenImage
+          <div
             data-aos="fade-up "
             data-aos-offset="20"
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
             data-aos-delay="300"
-            src="/thePlatform/img-beautyweb3Green.webp"
-          />
+          >
+            <GreenImage src="/thePlatform/img-beautyweb3Green.webp" />
+          </div>
           <GreenTabImage
             data-aos="fade-up "
             data-aos-offset="20"
@@ -103,14 +104,15 @@ const BeautyOfWeb3 = () => {
             data-aos-delay="300"
             src="/thePlatform/img-beautyweb3Green_m.webp"
           />
-          <GrayImage
+          <div
             data-aos="fade-up "
             data-aos-offset="20"
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
             data-aos-delay="400"
-            src="/thePlatform/img-beautyweb3Gray.webp"
-          />
+          >
+            <GrayImage src="/thePlatform/img-beautyweb3Gray.webp" />
+          </div>
           <GrayTabImage
             data-aos="fade-up "
             data-aos-offset="20"
