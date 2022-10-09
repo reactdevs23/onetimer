@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeroWrapper = styled.section`
-  padding-top: 150px;
+  padding-top: 120px;
 
   @media only screen and (max-width: 520px) {
     padding-top: 200px;
@@ -14,8 +14,10 @@ export const StyledWorkWithBrands = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 50px;
   @media only screen and (max-width: 520px) {
     position: static;
+    padding-top: 0px;
   }
 `;
 export const StyledHeroImage = styled.img`

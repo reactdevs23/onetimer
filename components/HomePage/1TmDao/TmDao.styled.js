@@ -6,6 +6,7 @@ export const GridContainer = styled.div`
   margin: 0 auto;
   padding: 120px 0;
   padding-top: 300px;
+  padding-bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
