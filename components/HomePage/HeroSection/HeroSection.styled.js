@@ -83,11 +83,14 @@ export const ImageContainer = styled.div`
   width: 85%;
   max-width: 1376px;
   margin: 0 auto;
-  margin-top: -120px;
+  margin-top: -20%;
   z-index: 2;
   position: relative;
+  @media only screen and (max-width: 1399px) {
+    margin-top: -150px;
+  }
   @media only screen and (max-width: 767px) {
-    margin-top: -80px;
+    margin-top: -120px;
   }
 `;
 export const Image = styled.img`
