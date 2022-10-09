@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  padding-top: 120px;
+  padding-bottom: 120px;
   @media only screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
     justify-content: center;
