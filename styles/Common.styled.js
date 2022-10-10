@@ -57,6 +57,7 @@ export const Title = styled.h2`
     letterSpacing ? letterSpacing : "-0.04em"};
   text-transform: ${({ capitalize }) =>
     capitalize ? "capitalize" : "uppercase"};
+  text-transform: ${({ lowerCase }) => lowerCase && "lowercase"};
 
   color: ${({ color }) => (color ? color : " #f2f5fa")};
 

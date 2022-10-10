@@ -33,6 +33,13 @@ export const ImageContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+
+    .redImage,
+    .yellowImage,
+    .greenImage,
+    .grayImage {
+      display: none;
+    }
   }
   @media only screen and (max-width: 520px) {
     display: grid;

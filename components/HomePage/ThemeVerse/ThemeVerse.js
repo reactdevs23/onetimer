@@ -37,7 +37,7 @@ const ThemeVerse = () => {
             </Tagline>
           </Center>
           <TitlesContainer>
-            <Title noPadding mobileTextCenter>
+            <Title lowerCase noPadding mobileTextCenter>
               theme
             </Title>
             <Slash src="thePlatform/icons/ic-slash.svg" alt="#" />

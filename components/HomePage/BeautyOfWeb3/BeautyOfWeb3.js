@@ -35,6 +35,7 @@ const BeautyOfWeb3 = () => {
       <GridContainer>
         <ImageContainer>
           <div
+            className="redImage"
             data-aos="fade-up "
             data-aos-offset="20"
             data-aos-duration="500"
@@ -42,6 +43,7 @@ const BeautyOfWeb3 = () => {
           >
             <RedImage src="/thePlatform/img-beautyweb3Red.webp" />
           </div>
+
           <RedTabImage
             data-aos="fade-up "
             data-aos-offset="20"
@@ -62,6 +64,7 @@ const BeautyOfWeb3 = () => {
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
             data-aos-delay="200"
+            className="yellowImage"
           >
             {" "}
             <YellowImage src="/thePlatform/img-beautyweb3Yellow.webp" />
@@ -89,6 +92,7 @@ const BeautyOfWeb3 = () => {
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
             data-aos-delay="300"
+            className="greenImage"
           >
             <GreenImage src="/thePlatform/img-beautyweb3Green.webp" />
           </div>
@@ -114,6 +118,7 @@ const BeautyOfWeb3 = () => {
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
             data-aos-delay="400"
+            className="grayImage"
           >
             <GrayImage src="/thePlatform/img-beautyweb3Gray.webp" />
           </div>
